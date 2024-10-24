@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:week2/widgets/card_demo.dart';
 import 'package:week2/widgets/column_page.dart';
 import 'package:week2/widgets/list_view_menu.dart';
 import 'package:week2/widgets/row_page.dart';
@@ -67,6 +68,18 @@ class HomePage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => const ListViewMenu(),
+                  ),
+                );
+              },
+            ),
+            ListTile(
+              leading: const Icon((Icons.credit_score)),
+              title: const Text('Card & Inkwell widget'),
+              onTap: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CardDemo(),
                   ),
                 );
               },

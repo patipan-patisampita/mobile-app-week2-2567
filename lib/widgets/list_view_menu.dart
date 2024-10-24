@@ -8,14 +8,10 @@ class ListMenu {
 }
 
 List<ListMenu> menus = [
-  const ListMenu(
-      title: 'MENU-1', subtitle: 'SUB-1', icon: Icons.person), //index 0
-  const ListMenu(
-      title: 'MENU-2', subtitle: 'SUB-2', icon: Icons.person_add), //index 1
-  const ListMenu(
-      title: 'MENU-3', subtitle: 'SUB-3', icon: Icons.wifi), //index 2
-  const ListMenu(
-      title: 'MENU-4', subtitle: 'SUB-4', icon: Icons.build), //index 3
+  const ListMenu(title: 'MENU-1', subtitle: 'SUB-1', icon: Icons.person), //index 0
+  const ListMenu(title: 'MENU-2', subtitle: 'SUB-2', icon: Icons.person_add), //index 1
+  const ListMenu(title: 'MENU-3', subtitle: 'SUB-3', icon: Icons.wifi), //index 2
+  const ListMenu(title: 'MENU-4', subtitle: 'SUB-4', icon: Icons.build), //index 3
 ];
 
 class ListViewMenu extends StatelessWidget {
