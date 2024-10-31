@@ -11,6 +11,16 @@ class _InitialStateState extends State<InitialState> {
   String value = "";
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    setState(() {
+      value = "Cloud-native";
+    });
+    print("Initial state");
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

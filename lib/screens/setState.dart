@@ -45,7 +45,10 @@ class _SetStateDemoState extends State<SetStateDemo> {
           setState(() {
             setStateValue = "Developer productivity";
           });
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const InitialState()));
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => const InitialState()),
+          );
         },
         child: Icon(Icons.add),
       ),
