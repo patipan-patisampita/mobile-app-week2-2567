@@ -11,6 +11,7 @@ List<ListMenu> menus = [
   const ListMenu(title: 'MENU-1', icon: Icons.person, bkColor: Colors.green), //index 0
   const ListMenu(title: 'MENU-2', icon: Icons.person_add, bkColor: Colors.blue), //index 0
   const ListMenu(title: 'MENU-3', icon: Icons.power_off, bkColor: Colors.red), //index 0
+  const ListMenu(title: 'MENU-4', icon: Icons.wifi, bkColor: Colors.orange), //index 0
 ];
 
 class MyCard extends StatelessWidget {
