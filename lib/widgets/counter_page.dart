@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CounterPage extends StatefulWidget {
-  const CounterPage({super.key});
+  final String name;
+  static String id = "/counter";
+  const CounterPage({super.key, required this.name});
 
   @override
   State<CounterPage> createState() => _CounterPageState();

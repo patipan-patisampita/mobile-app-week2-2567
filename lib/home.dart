@@ -24,7 +24,8 @@ class HomePage extends StatelessWidget {
               accountName: Text("Mark Zuckerberg"),
               accountEmail: Text('mark@gmail.com'),
               currentAccountPicture: CircleAvatar(
-                child: Icon(Icons.android),
+                // child: Icon(Icons.android),
+                backgroundImage: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg'),
               ),
             ),
             ListTile(
@@ -120,12 +121,12 @@ class HomePage extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon((Icons.countertops)),
-              title: const Text('Counter App'),
+              title:  Text('Counter App'),
               onTap: () async {
-                await Navigator.pushReplacement(
+                await Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const CounterPage(),
+                    builder: (context) => const CounterPage(name: "xxx",),
                   ),
                 );
                 debugPrint("Counter App");
