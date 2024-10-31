@@ -30,98 +30,113 @@ class HomePage extends StatelessWidget {
             ListTile(
               leading: Icon((Icons.home)),
               title: Text('Home'),
-              onTap: () {
-                Navigator.pushReplacement(
+              onTap: () async {
+               await Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const HomePage(),
                   ),
                 );
+               debugPrint("Home page");
               },
             ),
             ListTile(
               leading: Icon((Icons.apps)),
               title: Text('Row'),
-              onTap: () {
-                Navigator.pushReplacement(
+              onTap: () async {
+                await Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const RowPage(),
                   ),
                 );
+                debugPrint("Row widget");
               },
             ),
             ListTile(
               leading: Icon((Icons.apps)),
               title: Text('Column'),
-              onTap: () {
-                Navigator.pushReplacement(
+              onTap: () async {
+                await Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const ColumnPage(),
                   ),
                 );
+                debugPrint("Column widget");
               },
             ),
             ListTile(
               leading: Icon((Icons.apps)),
               title: Text('List view menu'),
-              onTap: () {
-                Navigator.pushReplacement(
+              onTap: () async {
+               final result = await Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const ListViewMenu(),
                   ),
                 );
+                debugPrint("List view widget $result");
               },
             ),
             ListTile(
               leading: const Icon((Icons.credit_score)),
               title: const Text('Card & Inkwell widget'),
-              onTap: () {
-                Navigator.pushReplacement(
+              onTap: () async {
+                 await Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const CardDemo(),
                   ),
                 );
+                 debugPrint("'Card & Inkwell widget");
               },
             ),
             ListTile(
               leading: const Icon((Icons.credit_card)),
               title: const Text('My Card'),
-              onTap: () {
-                Navigator.pushReplacement(
+              onTap: ()async {
+                await Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const MyCard(),
                   ),
                 );
+                debugPrint("My Card");
               },
             ),
             ListTile(
               leading: const Icon((Icons.library_add)),
               title: const Text('SetState'),
-              onTap: () {
-                Navigator.pushReplacement(
+              onTap: () async {
+               await Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const SetStateDemo(),
                   ),
                 );
+               debugPrint("SetState");
               },
             ),
             ListTile(
               leading: const Icon((Icons.countertops)),
               title: const Text('Counter App'),
-              onTap: () {
-                Navigator.pushReplacement(
+              onTap: () async {
+                await Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const CounterPage(),
                   ),
                 );
+                debugPrint("Counter App");
               },
+            ),
+            Divider(
+              height: 20,
+              thickness: 1,
+              indent: 20,
+              endIndent: 0,
+              color: Colors.indigo,
             ),
           ],
         ),
